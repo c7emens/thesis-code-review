@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials — never commit
+*credentials*.json
+*.pem
+*.key
+.env
+
+# Partner data — explicitly excluded from this review folder
+Master Flight Report.xlsx
+helicopter_icao.csv
+helicopter_icao.xlsx
+~$*
+
+*.log
+*.pdf
+*.png
+*.csv
+*.parquet
