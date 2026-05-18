@@ -32,7 +32,7 @@ import signal
 import sys
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
-from dotenv import load_dotenv; load_dotenv("/mnt/d/thesis/.env")
+from dotenv import load_dotenv; load_dotenv()
 from pathlib import Path
 import threading
 import time

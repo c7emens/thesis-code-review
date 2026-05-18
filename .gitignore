@@ -36,3 +36,8 @@ helicopter_icao.xlsx
 *.png
 *.csv
 *.parquet
+
+# Allow bundled sample data
+!data/sample/
+!data/sample/*.csv
+!data/sample/*.csv.zst

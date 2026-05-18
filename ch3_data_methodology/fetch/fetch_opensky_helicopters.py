@@ -23,7 +23,7 @@ import math
 import signal
 import os
 import sys
-from dotenv import load_dotenv; load_dotenv("/mnt/d/thesis/.env")
+from dotenv import load_dotenv; load_dotenv()
 import threading
 import time
 from datetime import datetime, timedelta, timezone

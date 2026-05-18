@@ -25,7 +25,7 @@
 import argparse
 import os
 import signal
-from dotenv import load_dotenv; load_dotenv("/mnt/d/thesis/.env")
+from dotenv import load_dotenv; load_dotenv()
 import sys
 import threading
 import time

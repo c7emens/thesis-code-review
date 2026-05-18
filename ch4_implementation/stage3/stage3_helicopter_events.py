@@ -505,7 +505,7 @@ def deduplicate_events(events: list[dict]) -> list[dict]:
 # OurAirports dataset (loaded once)
 
 _AIRPORTS_CSV = Path("/mnt/e/data_lake/ourairports_airports.csv")
-_AIRPORTS_FALLBACK = Path("/mnt/d/thesis/presentation/.heli_cache/ourairports_airports.csv")
+_AIRPORTS_FALLBACK = Path(__file__).resolve().parents[2] / "data" / "sample" / "ourairports_airports.csv"
 _AIRPORT_TYPES = {"heliport", "small_airport", "medium_airport", "large_airport"}
 
 GROUND_ALT_M = 100      # baro altitude ceiling for airport positions (generous

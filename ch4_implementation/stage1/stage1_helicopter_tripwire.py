@@ -60,7 +60,7 @@ import psycopg2
 import psycopg2.extras
 import trino
 import trino.auth
-from dotenv import load_dotenv; load_dotenv("/mnt/d/thesis/.env")
+from dotenv import load_dotenv; load_dotenv()
 from opensky_auth import make_oauth2_auth
 
 from pipeline_common import (

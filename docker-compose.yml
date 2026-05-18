@@ -1,0 +1,20 @@
+services:
+  timescaledb:
+    image: timescale/timescaledb-ha:pg16
+    container_name: thesis_code_review_db
+    ports:
+      - "${DB_PORT_EXTERNAL:-5432}:5432"
+    environment:
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: thesis2026
+      POSTGRES_DB: windfarm
+    volumes:
+      - tscale_data:/home/postgres/pgdata/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U thesis -d windfarm"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  tscale_data:
